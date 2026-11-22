@@ -36,7 +36,7 @@ vis_miss(dane)
 gg_miss_fct(x = dane, fct = playlist_subgenre)
 
 dane%>%
-  group_by(track_artist) %>%
+  group_by(playlist_genre) %>%
   miss_var_summary()
 
 ```
