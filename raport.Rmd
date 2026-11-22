@@ -30,5 +30,7 @@ gg_miss_var(dane)
 ```
 ```{r}
 mcar_test(dane)
+#shadow mapa#
+vis_miss(dane)
 ```
   
