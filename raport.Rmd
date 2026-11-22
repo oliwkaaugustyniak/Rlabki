@@ -28,3 +28,7 @@ co stanowi `r pct_miss(dane)` % wszystkich danych
 ```{r}
 gg_miss_var(dane)
 ```
+```{r}
+mcar_test(dane)
+```
+  
