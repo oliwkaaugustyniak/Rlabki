@@ -24,3 +24,7 @@ n_miss(dane)
 ```
 Liczba braków danych `r n_miss(dane)`
 co stanowi `r pct_miss(dane)` % wszystkich danych
+
+```{r}
+gg_miss_var(dane)
+```
