@@ -40,4 +40,17 @@ dane%>%
   miss_var_summary()
 
 ```
-  
+##2.1 Spójnoś danych
+
+Zadanie domowe: sprawdzić czy nie mamy brudnych danych -> link na kursie
+
+## 2.1 Imputacja braków danych
+
+```{r}
+#napisać w raporcie czemu wybraliśmy taką metodę
+library(VIM)
+
+dane2 <- VIM::hotdeck(dane)
+n_miss(dane2)
+
+```
