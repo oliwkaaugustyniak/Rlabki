@@ -1,0 +1,19 @@
+---
+title: "RAPORT"
+date: "`r Sys.Date()`"
+output: html_document
+  rmdformats::html_clean:
+    highlight: kate
+---
+```{r setup, include=FALSE}
+## Global options
+knitr::opts_chunk$set(cache = TRUE)
+library(tidyverse)
+```
+
+#1.Wprowadzenie
+o czym to bedzie co to za dane, ile mamy obs, jakie to zmienne, jaki zbior jest super i ekstra mozna dac linka jakas motywacje zeby zrobic analize, znalezc zaleznosci tu i tu bla bla bla, wizualizacja macierze przekrojowe
+#2 Porządkowanie i czyszczenie danych
+```{r}
+sum(is.na(dane))
+```
