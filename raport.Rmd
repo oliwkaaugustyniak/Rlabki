@@ -14,9 +14,13 @@ library(naniar)
 library(tidyverse)
 ```
 
-#1.Wprowadzenie o czym to bedzie co to za dane, ile mamy obs, jakie to zmienne, jaki zbior jest super i ekstra mozna dac linka jakas motywacje zeby zrobic analize, znalezc zaleznosci tu i tu bla bla bla, wizualizacja macierze przekrojowe #2 Porządkowanie i czyszczenie danych
+#1.Wprowadzenie o czym to bedzie co to za dane, ile mamy obs, jakie to zmienne, jaki zbior jest super i ekstra mozna dac linka jakas motywacje zeby zrobic analize, znalezc zaleznosci tu i tu bla bla bla, wizualizacja macierze przekrojowe 
+
+#2 Porządkowanie i czyszczenie danych
 
 ```{r}
 sum(is.na(dane))
 n_miss(dane)
 ```
+Liczba braków danych `r n_miss(dane)`
+co stanowi `r pct_miss(dane)` % wszystkich danych
