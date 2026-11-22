@@ -35,5 +35,9 @@ mcar_test(dane)
 vis_miss(dane)
 gg_miss_fct(x = dane, fct = playlist_subgenre)
 
+dane%>%
+  group_by(track_artist) %>%
+  miss_var_summary()
+
 ```
   
