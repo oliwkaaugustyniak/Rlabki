@@ -12,6 +12,7 @@ knitr::opts_chunk$set(cache = TRUE)
 dane <- read.csv("spotify_songs.csv")
 library(naniar)
 library(tidyverse)
+library(dplyr)
 ```
 
 #1.Wprowadzenie o czym to bedzie co to za dane, ile mamy obs, jakie to zmienne, jaki zbior jest super i ekstra mozna dac linka jakas motywacje zeby zrobic analize, znalezc zaleznosci tu i tu bla bla bla, wizualizacja macierze przekrojowe 
@@ -32,5 +33,7 @@ gg_miss_var(dane)
 mcar_test(dane)
 #shadow mapa#
 vis_miss(dane)
+gg_miss_fct(x = dane, fct = playlist_subgenre)
+
 ```
   
